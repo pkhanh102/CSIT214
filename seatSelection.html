@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Seat Selection</title>
+
+	</head>
+<style>
+	.text{
+		margin-left: 8ch;
+	}
+	.containerConfirm{
+		width: 380px;
+		height: 650px;
+		flex-shrink: 0;
+		border-radius: 40px 40px 47px 40px;
+		background: #FFF;
+		box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		margin-left: 160px;
+	}
+	.con1{
+		width: 34px;
+		height: 34px;
+		flex-shrink: 0;
+		margin-left: 30px;
+		margin-top: 20px;
+		border-radius: 10px 10px 10px 10px
+	}
+</style>
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">FlyDreamAir</a>
+				<img src="https://static.vecteezy.com/system/resources/previews/021/286/390/original/aeroplane-airplane-icon-on-transparent-background-free-png.png" alt="airplane-logo" style="height: 50px; width: 75px;">
+				
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Book Flight</a>
+						</li>
+						<li><a class="nav-link" href="manageBooking1.html">Manage Flight</a></li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<div>
+			<style>
+				body {
+					background-image: url('images/seat.png');
+					background-size: cover; /* Adjust the size to cover the entire page */
+					background-attachment: fixed; /* Optional: To prevent scrolling */
+				}
+			</style>
+		<!-- Start Hero Section -->
+			<h1 style="margin-left: 250px;font-size: 50;color:black; margin-top: 30px; margin-bottom: 30px;">Seat Selection</h1>
+
+			<div class="containerConfirm" style="margin-left: 200px; width: 380px; margin-bottom: 50px;">
+				<br><h1 style="text-align: center;">FlyDreamAir</h1>
+				<h2 style="text-align: center;font-size: 12px;">Thank you for your patient,<br>Please choose your seat</h2>
+
+				<h2 style="margin-left: 20px; margin-top: 30px; font-size: 25px;">Date: </h2>
+				<div style="margin-left: 60px; display: inline-block; border: 1px solid #ccc; padding: 5px;border-radius: 40px 40px 47px 40px;background-color:#7B7EF2 ;color: white;width: 280px;text-align: center;">Thursday, 30th October, 2023</div>
+				
+				<h2 style="margin-left: 20px; margin-top:40px; font-size: 25px; display: inline-block">From: </h2>
+				<select style="margin-left: 10px;background-color: #C2C3EA; height: 45px; width: 90px;display: inline-block; font-weight: bold;" id="arrive" name="arrive">
+					<option value="syd">SYD</option>
+					<option value="mel">MEL</option>
+				</select>
+
+				<h2 style="margin-left: 10px;display: inline-block; font-size: 25px;">To: </h2>
+				<select style="margin-left: 10px;background-color: #C2C3EA; height: 45px; width: 90px;display: inline-block; font-weight: bold;" id="arrive" name="arrive">
+					<option value="mel">MEL</option>
+					<option value="syd">SYD</option>
+				</select>
+
+				<h2 style="margin-left: 20px;font-size: 20px;">Please choose your seat</h2>
+				<input style="margin-left: 40px;display: inline-block; border: 1px solid #ccc; padding: 5px;border-radius: 30px 30px 30px 30px;background-color:#C2C3EA;color: black;width: 280px;height: 80px;"type="text" id="myTextInput" name="myTextInput">
+				
+				<div class="con1" style="background-color: #ccc;display: inline-block; width: 90px; height: 40px; padding-top: 10px; margin-bottom: 45px; margin-top: 35px;"><h2 style="font-size: 12px; text-align: center;">Available</h2></div> 
+				<div class="con1" style="background-color: #FEB5DF;display: inline-block; width: 90px; height: 40px; padding: 10px;"><h2 style="font-size: 12px; text-align: center;">Booked</h2></div>
+				<div class="con1" style="background-color: #C2C3EA;display: inline-block; width: 90px; height: 40px; padding: 10px;"><h2 style="font-size: 12px; text-align: center;">Processing</h2></div>
+
+				<a href="services.html" class="seat-button" style="background-color: #7B7EF2; border-radius: 15px; padding: 10px; font-size: 20px; padding-left: 30px; padding-right: 30px; font-weight: bold; margin-left: 90px; ;">Confirm Seat</a>
+			</div>
+		<!-- End Hero Section -->
+		</div>
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Infligh Dining</title>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+
+			<div class="container">
+				<a class="navbar-brand" href="index.html">FlyDreamAir</a>
+				<img src="https://static.vecteezy.com/system/resources/previews/021/286/390/original/aeroplane-airplane-icon-on-transparent-background-free-png.png" alt="airplane-logo" style="height: 50px; width: 75px;">
+				
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Book Flight</a>
+						</li>
+						<li><a class="nav-link" href="manageBooking1.html">Manage Flight</a></li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<div>
+			<style>
+				body {
+					background-image: url('https://wallpapers.com/images/hd/sunset-silhouette-airplane-brh2gmlmjhnj74dv.webp');
+					background-size: cover; /* Adjust the size to cover the entire page */
+					background-attachment: fixed; /* Optional: To prevent scrolling */
+				}
+
+        h1 {
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* vertically align */
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        /* New styles added below */
+        .food-option {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+        }
+
+        .food-image {
+            margin-bottom: 15px;
+            width: 100%; /* Adjust as per requirement */
+        }
+
+        .food-description {
+            text-align: center;
+        }
+
+        .no-meal-option, .next-button-container {
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center;     /* Center vertically */
+          text-align: center;
+          margin-top: 20px
+        }
+
+        .next-button {
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease; /* For a smooth hover effect */
+        }
+
+        .next-button:hover {
+            background-color: darkblue; /* Darker shade when hovered */
+        }
+
+			</style>
+		<!-- Start Hero Section -->
+      <div class="hero">
+        <div class="container">
+            <h1>In-flight Dining</h1>
+            <div class="food-option">
+
+                <!-- First box (Chicken with Rice) -->
+                <div class="box" style="margin-left: 300px;">
+                    <div class="food-description">
+                        <img src="images/chickenrice.png" alt="Chicken with Rice" class="food-image">
+                        <input type="radio" name="food" value="chicken_with_rice">
+                        <label for="chicken_with_rice">Chicken with Rice</label>
+                    </div>
+                </div>
+
+                <!-- Second box (Spaghetti) -->
+                <div class="box" style="margin-right: 300px;">
+                    <div class="food-description">
+                        <img src="images/spaghetti.png" alt="Spaghetti" class="food-image" style="height: 190px;">
+                        <input type="radio" name="food" value="spaghetti">
+                        <label for="spaghetti">Spaghetti</label>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Third box (No meal option) -->
+            <div class="no-meal-option" style="margin-top: 50px; margin-bottom: 30px;">
+                <div class="box">   
+                    <div class="food-description">
+                        <input type="radio" name="food" value="no_meal">
+                        <label for="no_meal">No, I don't like to have any meal</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-button-container">
+                <a href="summary.html" class="Search">Next</a>
+            </div>
+        </div>
+      </div>
+    <!-- End Hero Section -->
+		</div>
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
